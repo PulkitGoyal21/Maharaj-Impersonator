@@ -1,0 +1,6 @@
+streamlit
+sentence-transformers
+numpy
+groq
+transformers
+torch
