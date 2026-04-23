@@ -73,7 +73,7 @@ def build_prompt(user_q, mode="normal"):
             "Do NOT exceed 7 sentences."
         )
     else:
-        instruction = "Answer deeply, philosophically, and in the same reflective tone."
+        instruction = "Answer deeply, philosophically, and in the same reflective tone. IMPORTANT: Give plenty of real life examples."
 
     prompt = instruction + "\n\n"
 
