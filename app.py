@@ -90,7 +90,7 @@ if "mode" not in st.session_state:
 # ---------------- UI ----------------
 
 
-user_q = st.text_input("Ask your question:")
+user_q = st.text_area("Ask your question:", height=120)
 
 
 
