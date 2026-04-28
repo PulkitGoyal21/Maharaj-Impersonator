@@ -142,7 +142,7 @@ def build_system_prompt(user_q, mode):
 
 def get_answer(chat_history, user_q, mode):
     # Strip extra keys — Groq API only accepts "role" and "content"
-    clean_history = [{"role": m["role"], "content": m["content"]} for m in chat_history]
+    clean_history = [{"role": m["role"], "content": m["content"]} for m in chat_history[-4:]]
     system_prompt = build_system_prompt(user_q, mode)
     messages = [{"role": "system", "content": system_prompt}]
     messages += clean_history
