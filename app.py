@@ -152,7 +152,7 @@ def get_answer(chat_history, user_q, mode):
         model="openai/gpt-oss-120b",
         messages=messages,
         temperature=0.7,
-        max_tokens=1000
+        max_tokens=2500
     )
     return response.choices[0].message.content
 
