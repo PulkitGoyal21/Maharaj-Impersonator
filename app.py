@@ -149,7 +149,7 @@ def get_answer(chat_history, user_q, mode):
     messages.append({"role": "user", "content": user_q})
 
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=messages,
         temperature=0.7,
         max_tokens=1000
